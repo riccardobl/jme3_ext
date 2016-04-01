@@ -17,5 +17,6 @@ bin/
 build/
 .project
 .classpath
-.gradle
-.settings
+.gradle/
+.settings/
+

@@ -32,11 +32,11 @@ repositories {
 }	
 
 dependencies {
-    runtime "${jme_group}:jme3-terrain:${jme_version}"
+    testCompile "${jme_group}:jme3-terrain:${jme_version}"
 
-    runtime "${jme_group}:jme3-core:${jme_version}"
-    runtime "${jme_group}:jme3-lwjgl:${jme_version}"
-    runtime "${jme_group}:jme3-desktop:${jme_version}"
+    compile "${jme_group}:jme3-core:${jme_version}"
+    compile "${jme_group}:jme3-lwjgl:${jme_version}"
+    compile "${jme_group}:jme3-desktop:${jme_version}"
     
     
     compile "org.apache.logging.log4j:log4j-api:2.2"

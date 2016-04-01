@@ -19,6 +19,7 @@ import jme3.ext.VertexBufferUpdateTracker.TrackingMode;
 import lombok.extern.log4j.Log4j2;
 
 /**
+ * Detect geometry updates
  * 
  * @author Riccardo Balbo
  */

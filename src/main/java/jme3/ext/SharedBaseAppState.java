@@ -8,6 +8,9 @@ import com.jme3.app.state.BaseAppState;
 
 import lombok.extern.log4j.Log4j2;
 
+/**
+ * @author Riccardo Balbo
+ */
 @Log4j2
 public  abstract class SharedBaseAppState extends BaseAppState{
 	private final Map<Object,Boolean> _EP=new WeakHashMap<Object,Boolean>();

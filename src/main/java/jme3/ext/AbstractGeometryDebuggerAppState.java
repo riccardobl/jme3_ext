@@ -11,7 +11,6 @@ import jme3.ext.GeometryUpdateDetector.GeometryUpdateListener;
 import lombok.extern.log4j.Log4j2;
 
 /**
- * 
  * @author Riccardo Balbo
  */
 
