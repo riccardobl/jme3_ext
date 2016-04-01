@@ -1,0 +1,45 @@
+apply plugin: 'java'
+apply plugin:  'maven'
+
+
+
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+def jme_version ="frk-SNAPSHOT"
+def jme_group =  "com.github.riccardobl.jmonkeyengine"
+
+
+def javaVersion='1.7'
+
+targetCompatibility = javaVersion
+sourceCompatibility = javaVersion
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+			
+repositories {
+    mavenLocal()
+  	mavenCentral()	
+	maven {
+		url 'http://dl.bintray.com/riccardo/thirdparty'
+	}	
+
+	maven {  
+		url "https://jitpack.io" 
+	}
+
+}	
+
+dependencies {
+    runtime "${jme_group}:jme3-terrain:${jme_version}"
+
+    runtime "${jme_group}:jme3-core:${jme_version}"
+    runtime "${jme_group}:jme3-lwjgl:${jme_version}"
+    runtime "${jme_group}:jme3-desktop:${jme_version}"
+    
+    
+    compile "org.apache.logging.log4j:log4j-api:2.2"
+    compile "org.apache.logging.log4j:log4j-core:2.2"
+	compile "com:lombok:1.16.5-FPATCH-0.2"
+}
